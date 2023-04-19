@@ -7,8 +7,8 @@ def srt_to_words(srt_file, encoding='utf-8'):
         lines = file.readlines()
         for line in lines:
             line = line.strip()
-            if line.isdigit():
-                continue  # Skip line numbers
+            if line.isdigit() or ' --> ' in line:
+                continue  # Skip line numbers and timeline
             elif line:
                 words += line.split()
     return words
