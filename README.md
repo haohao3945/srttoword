@@ -1,3 +1,4 @@
+
 # SRT to Word Converter
 
 This is a simple program that converts SubRip Subtitle (SRT) files to Microsoft Word (.docx) files using the docx and tkinter libraries in Python.
